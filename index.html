@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Connor's Website</title>
+        <title>Connor's Life-Changing Website</title>
         <style>
             body {
                 background: rgb(0, 234, 255);
                 color: rgb(255, 0, 200);
                 padding: 10px;
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-family: Courier;
             }
             #all-contents {
                 max-width: 800px;
-                margin: auto;
+                margin: left;
             }
         
             /* navigation menu */
             nav {
-                background: rgb(72, 255, 0);
+                border-radius: 10% / 50%;
+                width: 975px;
+                background: rgb(73, 252, 3);
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
@@ -43,33 +45,40 @@
         
             /* main container area beneath menu */
             main {
-                background: rgb(245, 238, 219);
-                display: flex;
+                width: 125%;
+                background-image: url("https://c.tenor.com/pJ3GkVJYxUEAAAAC/duck-spinning.gif");
+                display: grid;
             }
             .sidebar {
                 margin-right: 25px;
-                padding: 10px;
+                padding: 100px;
             }
             .sidebar-img {
+                margin-left: 300px;
                 width: 200px;
             }
             .content {
                 flex: 1;
                 padding: 15px;
             }
+            .intro {
+                color: rgb(235, 32, 201);
+                background-color: rgba(0, 234, 255, 0.781)
+            }
             #interests {
-                border: 4px silver ridge;
+                border: 10px silver ridge;
                 padding: 8px;
+                background-image: linear-gradient(to right, #6ff36f 0%, #6af3f8 100%);
             }
             h2, h3 {
-                margin: 0px;
+                margin:0px;
             }
         </style>
     </head>
     <body>
         <!-- CONTENT HERE-->
         <div id="all-contents">
-            <nav border-radius: 10% / 50%;>
+            <nav>
                 <h1>Connor's Website</h1>
                 <ul id="nav-ul">
                     <li class="nav-li">
@@ -85,10 +94,17 @@
                 <div class="sidebar">
                     <img class="sidebar-img" src="https://c.tenor.com/-OpJG9GeK3EAAAAC/kanye-west-stare.gif"
                 </div>
+                <div>
+                    <img class="sidebar-img" src="https://media3.giphy.com/media/TH24klDE8F9fRClVvO/giphy.gif"
+                </div>
                 <!--CONTENT-->
                 <div class="content">
-                    <h2>Connor Mitchell</h2>
-                    <p>Student at Mandeville High</p>
+                    <h2> 
+                        <span class="intro">Connor Mitchell</span>
+                    </h2>
+                    <p>
+                        <span class="intro">Student at Mandeville High </span>
+                    </p>
                     <!--INTERESTS SECTION-->
                     <div id="interests">
                         <h3>Interests</h3>
