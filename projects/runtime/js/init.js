@@ -33,9 +33,11 @@ var init = function (window) {
 
     // TODO 2 : add background
 
-    
-    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct!', 
-        '20px Arial',
+    var background = opspark.makeBackground(app, ground);
+    view.addChild(background);
+
+    var help = draw.textfield('| up: jump | right: flying jump | down: duck | space: fire | q self destruct! | Dodge Yeezus and JIK | Collect College Dropout | Shoot Pink Rectangles', 
+        '20px cursive',
         '#ccc', 'left');
     help.x = 10;
     help.y = ground.y + ground.getBounds().height + 10;
@@ -72,7 +74,9 @@ var init = function (window) {
     
     // TODO 1 : add a heads-up display to game
 
-
+    var hud = opspark.makeHud();
+    view.addChild(hud);
+    window.hud = hud;
 
     var game = opspark.createGameManager(app,hud);
     opspark.runLevelInGame(game);
